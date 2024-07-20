@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite CHALLENGE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Objective:
 
-Currently, two official plugins are available:
+Create a React app that displays a list of pokemons along with their information
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requirements:
 
-## Expanding the ESLint configuration
+Display a list of pokemons with the data available in this URL:
+https://gist.githubusercontent.com/nibble-4bits/6191e872f6ea39f3a2c181d3d29a300a/raw/9fbc467a8ab9d561bf3d16cb69a1352cb65597e6/pokedex.json
+For each pokemon, you should display the following information:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- name
+- types
+- description
+- HP, Attack and Defense stats
+- thumbnail image
 
-- Configure the top-level `parserOptions` property like this:
+## Add a text field that allows the user to filter pokemons.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+When the user types in this text field, display only the pokemons
+whose name matches the input entered by the user
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Add a toggle that when enabled, displays all pokemons,
+
+regardless of whatever input has been entered in the text field.
+If disabled, display only the filtered pokemons
